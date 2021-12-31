@@ -1,0 +1,15 @@
+<launch>
+
+<!-- Map_server node -->
+  	<!-- <arg name="map_file" value="$(find mobile_arm_moveit_perception_config)/map/map.yaml"> -->
+	<!-- <arg name="map_file" value="/home/puonn/map.yaml"> -->
+	<!-- <arg name="map_file" value="$(find mobile_arm_moveit_perception_config)/map/move_base_test.yaml"> -->
+	<arg name="map_file" value="$(find mobile_arm_moveit_perception_config)/map/map_maze.yaml">
+  	</arg> 
+  	<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"> 
+  	</node> 
+
+	<!-- <node pkg="tf" type="static_transform_publisher" name="gound_to_base_tf" 
+    args="0.0 0.0 0.06 0.0 0.0 0.0 /map /map_lower_z 100" /> -->
+
+</launch>

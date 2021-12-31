@@ -1,0 +1,24 @@
+<launch>
+
+    <!--Gazebo and RVIZ-->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/demo_gazebo.launch" >
+    </include>
+
+    <!--Map Server-->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/map_server.launch" >
+    </include>
+
+    <!--AMCL-->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/amcl.launch" >
+    </include>
+
+    <!--Move Base-->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/move_base.launch"/>
+
+    <!--Find Object 2D-->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/find_object_3d.launch"/>
+    
+    <!--Task1-->
+    <!-- <node pkg="robot_simulator" name="task_1" type="task_1.py" launch-prefix="xterm -e" output="screen"/>  -->
+
+</launch>

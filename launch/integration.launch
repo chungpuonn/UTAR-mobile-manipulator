@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- GAZEBO, MOVEIT!, and RVIZ -->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/demo_gazebo.launch"/>
+
+    <!-- Map Server -->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/map_server.launch"/>
+
+    <!-- AMCL -->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/amcl.launch"/>
+
+    <!-- Move Base -->
+    <include file="$(find mobile_arm_moveit_perception_config)/launch/move_base.launch"/>
+
+</launch>

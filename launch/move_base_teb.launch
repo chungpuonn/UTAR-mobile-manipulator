@@ -1,0 +1,21 @@
+<launch>
+    <!-- Arguments -->
+    <arg name="cmd_vel_topic" default="diff_drive_controller/cmd_vel" />
+
+    <!-- move_base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+        <rosparam file="$(find base_simulation)/config/costmap/common.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find base_simulation)/config/costmap/common.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find base_simulation)/config/costmap/local.yaml" command="load" />
+        <rosparam file="$(find base_simulation)/config/costmap/global.yaml" command="load" />
+
+        <rosparam file="$(find base_simulation)/config/local_planner/teb.yaml" command="load" />
+        <param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
+
+        <!-- <rosparam file="$(find base_simulation)/config/local_planner/dwa.yaml" command="load" />    
+        <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/> -->
+        
+        <remap to="cmd_vel" from="$(arg cmd_vel_topic)"/>
+    </node>
+</launch>

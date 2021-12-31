@@ -1,0 +1,7 @@
+image: /home/puonn/catkin_ws/src/RosForSwiftAndSwiftPro/mobile_arm_moveit_perception_config/map/map_edt_v2.pgm
+resolution: 0.100000
+origin: [0.000000, 0.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

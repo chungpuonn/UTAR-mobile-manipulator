@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: wheel_with_robot_v6
+    relative_path: urdf/wheel_with_robot_v6.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/wheel_with_robot_v6.srdf
+  CONFIG:
+    author_name: Chung Pu Onn
+    author_email: chungpuonn@gmail.com
+    generated_timestamp: 1625233420
