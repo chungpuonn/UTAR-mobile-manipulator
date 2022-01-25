@@ -8,6 +8,8 @@ Package of models and configurations for the "UTAR mobile manipulator"
 
 [Video of Presentation](https://www.youtube.com/watch?v=o63j5SG01Zg)
 
+[FYP Report Documentation](https://drive.google.com/file/d/12f6YWQAmgw-rYt-XqNpMMY8mLnN5fQ9y/view?usp=drivesdk)  
+
 
 ***
 ## In order to execute the pick & place simulation,  
